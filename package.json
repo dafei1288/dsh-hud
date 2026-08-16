@@ -49,22 +49,22 @@
     "url": "git+https://github.com/dafei1288/dsh-hud.git"
   },
   "dependencies": {
-    "@deepseek-ai/dsh-credentials": "0.1.0-rc.5"
+    "@deepseek-ai/dsh-credentials": "0.1.0-rc.6"
   },
   "peerDependencies": {
     "react": "^18.2.0"
   },
   "devDependencies": {
-    "@deepseek-ai/cordis": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-api-remotes": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-client-runtime": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-client-ui-conversation": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-client-ui-model-selection": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-client-ui-slots": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-session-projection": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-session-stats": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-host-webserver": "0.1.0-rc.5",
-    "@deepseek-ai/dsh-token-meter": "0.1.0-rc.5",
+    "@deepseek-ai/cordis": "^4.0.1",
+    "@deepseek-ai/dsh-api-remotes": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-runtime": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-model-selection": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-client-ui-slots": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-session-projection": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-session-stats": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-host-webserver": "0.1.0-rc.6",
+    "@deepseek-ai/dsh-token-meter": "0.1.0-rc.6",
     "@types/react": "~18.3.1",
     "react": "^18.2.0",
     "tsdown": "^0.22.2",
