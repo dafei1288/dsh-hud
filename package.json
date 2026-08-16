@@ -30,6 +30,7 @@
     "cordis.patch.yml"
   ],
   "scripts": {
+    "prepublishOnly": "npm run build",
     "build": "tsdown",
     "watch": "tsdown --watch",
     "typecheck": "tsc --noEmit"
@@ -43,6 +44,10 @@
     "pi-agent-hud"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dafei1288/dsh-hud.git"
+  },
   "dependencies": {
     "@deepseek-ai/dsh-credentials": "0.1.0-rc.5"
   },

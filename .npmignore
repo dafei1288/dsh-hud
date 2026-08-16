@@ -1,0 +1,8 @@
+.git/
+.github/
+node_modules/
+.pnpm-store/
+src/
+tsconfig.json
+tsdown.config.ts
+.gitignore
