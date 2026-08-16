@@ -2,6 +2,10 @@
 
 DeepSeek Harness（DSH）的 HUD 状态栏插件：在 Web GUI 输入框下方常驻显示当前会话的实时信息，模拟 [pi-agent-hud](https://github.com/dafei1288/pi-agent-hud) 的显示体验。
 
+<p align="center">
+  <img src="docs/images/poster.png" alt="dsh-hud" width="720">
+</p>
+
 > 状态 · 上下文占用 · 令牌 · 计时 · 模型 · 路径 · 使用统计 · 费用 · 上一次会话
 
 ## 显示内容
