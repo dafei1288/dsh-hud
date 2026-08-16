@@ -1,0 +1,68 @@
+{
+  "name": "dsh-hud",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness 的 HUD 状态栏插件：在输入区下方常驻显示会话实时信息（状态 / 上下文占用 / 令牌用量 / 轮次步数 / 计时 / 用时），模拟 pi-agent-hud 的显示体验。",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-slots",
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-model-selection",
+        "@deepseek-ai/dsh-token-meter",
+        "@deepseek-ai/dsh-session-stats"
+      ]
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "watch": "tsdown --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "hud",
+    "status-bar",
+    "plugin",
+    "pi-agent-hud"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@deepseek-ai/dsh-credentials": "0.1.0-rc.5"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-api-remotes": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-client-runtime": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-client-ui-conversation": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-client-ui-model-selection": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-client-ui-slots": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-session-projection": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-session-stats": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-host-webserver": "0.1.0-rc.5",
+    "@deepseek-ai/dsh-token-meter": "0.1.0-rc.5",
+    "@types/react": "~18.3.1",
+    "react": "^18.2.0",
+    "tsdown": "^0.22.2",
+    "typescript": "^5.6.0"
+  }
+}

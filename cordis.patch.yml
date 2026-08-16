@@ -1,0 +1,7 @@
+# dsh-hud bundle patch: insert this package's own client row so the modules
+# node half discovers it as a web plugin. `id` is the Loader entry id; `name`
+# is the npm package whose `dsh.client` manifest + `exports["./client"]` the
+# modules node half scans.
+- insert:
+    - id: hud
+      name: 'dsh-hud'
